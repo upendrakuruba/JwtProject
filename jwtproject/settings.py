@@ -184,7 +184,7 @@ USE_I18N = True
 USE_TZ = True
 
 CORS_ALLOWED_ORIGINS = [
-    "https://web-production-67da.up.railway.app/"
+    "http://localhost:8000",
 ]
 
 
