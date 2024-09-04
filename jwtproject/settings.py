@@ -185,7 +185,9 @@ USE_TZ = True
 
 
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = [
+    "http://0.0.0.0:8080"
+]
 
 
 # Static files (CSS, JavaScript, Images)
