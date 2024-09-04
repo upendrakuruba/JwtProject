@@ -183,7 +183,9 @@ USE_I18N = True
 
 USE_TZ = True
 
-
+headers: {
+  'Access-Control-Allow-Origin': '*'
+}
 
 CORS_ALLOW_ALL_ORIGINS =True
 
