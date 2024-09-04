@@ -186,7 +186,7 @@ USE_TZ = True
 
 
 CORS_ORIGIN_WHITELIST = [
-    "http://0.0.0.0:8080"
+    "http://localhost:3000"
 ]
 
 
