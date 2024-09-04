@@ -1,0 +1,1 @@
+web: gunicorn jwtproject.wsgi --log-file -
