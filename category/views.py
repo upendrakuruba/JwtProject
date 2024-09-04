@@ -43,3 +43,12 @@ class Productrud(RetrieveUpdateDestroyAPIView):
     def get_queryset(self):
         return self.queryset.filter(user=self.request.user)
 
+
+
+
+def my_custom_page_not_found_view(request,exception):
+    return render(request,'404_not_found.html')
+
+
+def my_custom_server_error_view(request):
+    return render(request,'server_error.html')
