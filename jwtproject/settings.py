@@ -183,9 +183,12 @@ USE_I18N = True
 
 USE_TZ = True
 
+ALLOWED_HOSTS = ["localhost","192.168.0.50"]
+
+CORS_ALLOW_CREDENTIALS = True
+
 CORS_ORIGIN_WHITELIST = (
-'http://localhost:3000',  # for localhost (REACT Default)
-'http://192.168.10.45:3000', # for network
+     "http://127.0.0.1:8000/",  # for network (Development)
 )
 
 
@@ -211,5 +214,3 @@ EMAIL_PORT='587'
 EMAIL_HOST_USER='kurumaupendra@gmail.com'
 EMAIL_HOST_PASSWORD='xfkn sbnx mjlr relz'
 
-
-# CORS_ORIGIN_ALLOW_ALL = True
