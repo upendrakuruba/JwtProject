@@ -183,19 +183,18 @@ USE_I18N = True
 
 USE_TZ = True
 
-CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:8000/",
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "http://127.0.0.1:8000/",
+# ]
 
+# CORS_ORIGIN_ALLOW_ALL = True
 
-CORS_ALLOW_METHODS = (
-    "DELETE",
-    "GET",
-    "OPTIONS",
-    "PATCH",
-    "POST",
-    "PUT",
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = (
+  'http://localhost:8000',
 )
+
+
 
 # CORS_ALLOW_ALL_ORIGINS =True
 
