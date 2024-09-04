@@ -185,9 +185,7 @@ USE_TZ = True
 
 
 
-CORS_ORIGIN_WHITELIST = [
-    "http://localhost:8000"
-]
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 # Static files (CSS, JavaScript, Images)
