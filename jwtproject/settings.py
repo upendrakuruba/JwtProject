@@ -183,20 +183,10 @@ USE_I18N = True
 
 USE_TZ = True
 
-# CORS_ALLOWED_ORIGINS = [
-#     "http://127.0.0.1:8000/",
-# ]
-
-# CORS_ORIGIN_ALLOW_ALL = True
-
-CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
-  'http://localhost:8000',
+'http://localhost:3000',  # for localhost (REACT Default)
+'http://192.168.10.45:3000', # for network
 )
-
-
-
-# CORS_ALLOW_ALL_ORIGINS =True
 
 
 # Static files (CSS, JavaScript, Images)
