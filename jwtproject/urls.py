@@ -28,7 +28,7 @@ schema_view = get_schema_view(
       title="INCOME EXPENSE API",
       default_version='v1',
       description="Test description",
-      terms_of_service="https://www.google.com/policies/terms/",
+      terms_of_service="//www.google.com/policies/terms/",
       contact=openapi.Contact(email="contact@expenses.local"),
       license=openapi.License(name="Test License"),
    ),
