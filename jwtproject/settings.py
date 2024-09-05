@@ -24,32 +24,56 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-7m))3=cm09h(yoc2^qi%z_af0u)bjnmzj4$3@$l&d9rgelsagw"
 
 # SECURITY WARNING: don't run with debug turned on in production!
+SECURITY_TRUE = True
+SECURITY_FALSE = False
+
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+CSRF_COOKIE_SECURE = True
+
+SESSION_COOKIE_SECURE = True
+
+SECURE_SSL_REDIRECT = True
+
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+
+SECURE_HSTS_PRELOAD = True
+
+SECURE_HSTS_SECONDS = 1 #31536000
+
+ALLOWED_HOSTS = ["127.0.0.1"] 
 
 
-# CORS_ORIGIN_WHITELIST = [
-# 'http://localhost:8000',
 
-# ]
+CORS_ORIGIN_ALLOW_ALL = False
 
-CORS_ALLOWED_ORIGIN_REGEXES = [
-    r'^https:\/\/mysite.com$',
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOWED_ORIGINS = [
+    'http://127.0.0.1',
 ]
 
-
-from corsheaders.defaults import default_headers
-
-CORS_ALLOW_HEADERS = default_headers + (
-    "custom-headers",
-   
+CORS_ALLOW_METHODS = (
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
 )
 
-CORS_ORIGIN_WHITELIST = ("http://localhost:8000", "https://web-production-67da.up.railway.app")
 
-
-
+CORS_ALLOW_HEADERS = (
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+)
 
 
 # Application definition
