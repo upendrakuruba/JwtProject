@@ -34,6 +34,9 @@ ALLOWED_HOSTS = ["*"]
 
 # ]
 
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r'^https:\/\/mysite.com$',
+]
 
 
 from corsheaders.defaults import default_headers
@@ -44,6 +47,7 @@ CORS_ALLOW_HEADERS = default_headers + (
 )
 
 CORS_ORIGIN_WHITELIST = ("http://localhost:8000", "https://web-production-67da.up.railway.app")
+
 
 
 
