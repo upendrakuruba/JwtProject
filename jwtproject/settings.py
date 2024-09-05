@@ -24,15 +24,32 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-7m))3=cm09h(yoc2^qi%z_af0u)bjnmzj4$3@$l&d9rgelsagw"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+# ALLOWED_HOSTS = ["*"]
 
 
-CORS_ORIGIN_WHITELIST = [
-'http://localhost:8000',
+# CORS_ORIGIN_WHITELIST = [
+# 'http://localhost:8000',
 
+# ]
+
+
+
+CORS_ALLOW_CREDENTIALS = True
+
+
+CORS_ALLOWED_ORIGINS = ['https://api.example.com', 'https://example.com', 'https://www.example.com' ]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://api.example.com', 'https://example.com', 'https://www.example.com'
 ]
+
+ALLOWED_HOSTS = ["0.0.0.0", "api.example.com", "example.com"]
+
+
+
+
 
 # Application definition
 
