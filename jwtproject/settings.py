@@ -31,9 +31,11 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"] 
 
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:8000',  # Example for a local development serve
-]
+# CORS_ALLOWED_ORIGINS = [
+#     'http://localhost:8000',  # Example for a local development serve
+# ]
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 
 
