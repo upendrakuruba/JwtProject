@@ -32,16 +32,11 @@ ALLOWED_HOSTS = ["*"]
 
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',  # Example for a local development serve
+    'http://localhost:8000',  # Example for a local development serve
 ]
 
-# settings.py
-SECURE_SSL_REDIRECT = True
 
 
-# settings.py
-SECURE_CONTENT_TYPE_NOSNIFF = True
-SECURE_BROWSER_XSS_FILTER = True
 
 # Application definition
 
