@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-7m))3=cm09h(yoc2^qi%z_af0u)bjnmzj4$3@$l&d9rgelsagw"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
+DEBUG = True
 
 # ALLOWED_HOSTS = ["*"]
 
@@ -36,17 +36,14 @@ SECRET_KEY = "django-insecure-7m))3=cm09h(yoc2^qi%z_af0u)bjnmzj4$3@$l&d9rgelsagw
 
 
 
-CORS_ALLOW_CREDENTIALS = True
+from corsheaders.defaults import default_headers
 
+CORS_ALLOW_HEADERS = default_headers + (
+    "custom-headers",
+   
+)
 
-CORS_ALLOWED_ORIGINS = ['https://api.example.com', 'https://example.com', 'https://www.example.com' ]
-
-CSRF_TRUSTED_ORIGINS = [
-    'https://api.example.com', 'https://example.com', 'https://www.example.com'
-]
-
-ALLOWED_HOSTS = ["0.0.0.0", "api.example.com", "example.com"]
-
+CORS_ORIGIN_WHITELIST = ("http://localhost:8000", "https://Your frontend host")
 
 
 
