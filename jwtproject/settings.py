@@ -29,6 +29,12 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 
 
+CORS_ORIGIN_WHITELIST = [
+'http://localhost:3000',
+'http://localhost:8000',
+'http://localhost:8080',
+]
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -182,14 +188,6 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 
 USE_TZ = True
-
-ALLOWED_HOSTS = ["localhost","192.168.0.50"]
-
-CORS_ALLOW_CREDENTIALS = True
-
-CORS_ORIGIN_WHITELIST = (
-     "http://127.0.0.1:8000/",  # for network (Development)
-)
 
 
 # Static files (CSS, JavaScript, Images)
