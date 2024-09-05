@@ -43,7 +43,7 @@ CORS_ALLOW_HEADERS = default_headers + (
    
 )
 
-CORS_ORIGIN_WHITELIST = ("http://localhost:8000", "https://Your frontend host")
+CORS_ORIGIN_WHITELIST = ("http://localhost:8000", "https://web-production-67da.up.railway.app")
 
 
 
